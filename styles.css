@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.canvas {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+  width: 1100px;
+  height: 750px;
+  box-shadow: 1px 24px 58px #0000004f;
+  border-radius: 24px;
+}
+
+.tile:hover {
+  stroke: #00de88;
+  stroke-width: 2px;
+}
+
+#title > h1 {
+  font-weight: 100;
+  color: #777;
+  font-size: 2.6em;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+#tooltip {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+  padding: 8px;
+  font: 10px;
+  background: #00de88;
+  box-shadow: 1px 4px 28px #00de88;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+text {
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.legend {
+  fill: #777;
+}
+
+svg {
+  font: 10px sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.button {
+  background-color: white;
+  color: gray;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 3px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+.button:active,
+.button:focus,
+.init {
+  color: green;
+  border: 0;
+  border-bottom: 2px solid green;
+}
+
+.button:hover {
+  border-bottom: 2px solid gray;
+}
+
+.init:hover {
+  border-bottom: 2px solid green;
+}
